@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.util.Objects;
 
 public class Main {
-
     public static void main(String[] args) {
         Employee[] employesArray = new Employee[10];
         EmployeeBook newBook = new EmployeeBook(10);
@@ -24,61 +23,67 @@ public class Main {
             newBook.addToEmployeeBook(employesArray[i]);
         }
 
-
+        System.out.println("printAllEmployees");
         newBook.printAllEmployees();
         System.out.println();
-        System.out.println();
+        System.out.println("printAllSalaryInMonth");
         newBook.printAllSalaryInMonth();
         System.out.println();
-        System.out.println();
+        System.out.println("printMinSalary");
         newBook.printMinSalary();
         System.out.println();
-        System.out.println();
+        System.out.println("printMaxSalary");
         newBook.printMaxSalary();
         System.out.println();
-        System.out.println();
+        System.out.println("printMiddleSalary");
         newBook.printMiddleSalary();
         System.out.println();
-        System.out.println();
+        System.out.println("printFullName");
         newBook.printFullName();
         System.out.println();
+        System.out.println("indexAllEmployeesSalary");
+        newBook.indexAllEmployeesSalary(1.6f);
+        newBook.printAllEmployees();
         System.out.println();
-        newBook.indexAllSalary(1.6f);
-        System.out.println();
-        System.out.println();
+        System.out.println("calculateMaxSalaryInDept");
         newBook.calculateMaxSalaryInDept(1);
         System.out.println();
-        System.out.println();
+        System.out.println("calculateMinSalaryInDept");
         newBook.calculateMinSalaryInDept(2);
         System.out.println();
         System.out.println();
+        System.out.println("printFullSalaryInDept");
         newBook.printFullSalaryInDept(3);
         System.out.println();
-        System.out.println();
+        System.out.println("calculateMiddleSalaryInDept");
         newBook.calculateMiddleSalaryInDept(4);
         System.out.println();
-        System.out.println();
+        System.out.println("indexAllSalaryInDept");
         newBook.indexAllSalaryInDept(5, 1.6f);
         System.out.println();
-        System.out.println();
+        System.out.println("printAllEmployeesInDept");
         newBook.printAllEmployeesInDept(1);
         System.out.println();
-        System.out.println();
+        System.out.println("printEmployeesSalaryLessThan");
         newBook.printEmployeesSalaryLessThan(80);
         System.out.println();
-        System.out.println();
+        System.out.println("printEmployeesSalaryMoreThan");
         newBook.printEmployeesSalaryMoreThan(80);
         System.out.println();
-        System.out.println();
+        System.out.println("addNewEmployee");
         newBook.addNewEmployee(newEmployee1);
         System.out.println();
-        System.out.println();
+        System.out.println("stretchArrayAndAddEmployees");
         newBook.stretchArrayAndAddEmployees(newEmployee1);
         System.out.println();
         System.out.println();
+        System.out.println("deleteThisEmployee");
         newBook.deleteThisEmployee(3);
         System.out.println();
+        System.out.println("searchAndPrintId");
+        newBook.searchAndPrintId(3);
         System.out.println();
-        newBook.searchId(3);
+        System.out.println("PrintDeletedEmployees");
+        newBook.PrintDeletedEmployees();
     }
 }
